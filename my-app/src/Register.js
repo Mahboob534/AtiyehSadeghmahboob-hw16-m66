@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Form, Button, Col, Row, InputGroup } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
@@ -32,8 +32,8 @@ export default function Register({
     setValidated(true);
   };
 
-   console.log(valueProv);
-  console.log(cityOfProvince[valueProv])
+  //  console.log(valueProv);
+  // console.log(cityOfProvince[valueProv])
 
   return (
     <Form noValidate validated={validated} onSubmit={handleSubmit}>
@@ -75,7 +75,7 @@ export default function Register({
             فرمت درست ایمیل 'username@ ... .com.
           </Form.Control.Feedback>
         </Form.Group>
-        <InputGroup className="my-3 position-relative">
+        <InputGroup className="my-3 ">
           {passwordVisibility ? (
             <Form.Control
               className=" bg-dark text-white "

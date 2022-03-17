@@ -64,7 +64,9 @@ export default function () {
           <Col sm={12}>
             <Tab.Content>
               <Tab.Pane eventKey="first">
-                <Login />
+                <Login passVisibility={passwordVisibility}
+                Eye={iconEye}
+                handlePassVisibility={handlePasswordVisibility} />
               </Tab.Pane>
               <Tab.Pane eventKey="second">
 
